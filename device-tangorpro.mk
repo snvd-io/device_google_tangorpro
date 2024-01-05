@@ -18,6 +18,15 @@ TARGET_KERNEL_DIR ?= device/google/tangorpro-kernel
 TARGET_BOARD_KERNEL_HEADERS := device/google/tangorpro-kernel/kernel-headers
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 
+ifdef RELEASE_GOOGLE_TANGORPRO_KERNEL_VERSION
+TARGET_LINUX_KERNEL_VERSION := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_VERSION)
+endif
+
+ifdef RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR
+TARGET_KERNEL_DIR := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR)
+TARGET_BOARD_KERNEL_HEADERS := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR)/kernel-headers
+endif
+
 BOARD_WITHOUT_RADIO := true
 
 $(call inherit-product-if-exists, vendor/google_devices/tangorpro/prebuilts/device-vendor-tangorpro.mk)
