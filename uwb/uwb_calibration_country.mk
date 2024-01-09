@@ -25,17 +25,41 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/UWB-calibration-fcc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-us.conf \
     $(LOCAL_PATH)/UWB-calibration-fcc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ca.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-at.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-be.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-bg.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-hr.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-cy.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-cz.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-dk.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ee.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-fi.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-fr.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-de.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-gr.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-hu.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ie.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-it.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-lv.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-lt.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-lu.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-mt.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-nl.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-pl.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-pt.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ro.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-sk.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-si.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-es.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-se.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-gb.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ni.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-is.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-li.conf \
     $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-no.conf \
-    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-au.conf \
-    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-uk.conf \
+    $(LOCAL_PATH)/UWB-calibration-ce.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ch.conf \
     $(LOCAL_PATH)/UWB-calibration-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-jp.conf \
+    $(LOCAL_PATH)/UWB-calibration-tw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-tw.conf \
     $(LOCAL_PATH)/UWB-calibration-restricted.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-ar.conf \
     $(LOCAL_PATH)/UWB-calibration-restricted.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-am.conf \
     $(LOCAL_PATH)/UWB-calibration-restricted.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uwb/UWB-calibration-az.conf \
