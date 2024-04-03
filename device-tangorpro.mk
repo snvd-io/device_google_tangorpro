@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+PRODUCT_RELEASE_CONFIG_MAPS += vendor/google_devices/release/phones/tangorpro/release_config_map.mk
+
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 
 ifdef RELEASE_GOOGLE_TANGORPRO_KERNEL_VERSION
