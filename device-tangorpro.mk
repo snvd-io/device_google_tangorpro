@@ -18,6 +18,15 @@ TARGET_KERNEL_DIR ?= device/google/tangorpro-kernel
 TARGET_BOARD_KERNEL_HEADERS := device/google/tangorpro-kernel/kernel-headers
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_LEFT
 
+ifdef RELEASE_GOOGLE_TANGORPRO_KERNEL_VERSION
+TARGET_LINUX_KERNEL_VERSION := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_VERSION)
+endif
+
+ifdef RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR
+TARGET_KERNEL_DIR := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR)
+TARGET_BOARD_KERNEL_HEADERS := $(RELEASE_GOOGLE_TANGORPRO_KERNEL_DIR)/kernel-headers
+endif
+
 BOARD_WITHOUT_RADIO := true
 
 $(call inherit-product-if-exists, vendor/google_devices/tangorpro/prebuilts/device-vendor-tangorpro.mk)
@@ -164,7 +173,7 @@ include device/google/tangorpro/fingerprint_config.mk
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/tangorpro/prebuilts
 ifneq (,$(filter AP1%,$(RELEASE_PLATFORM_VERSION)))
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/tangorpro/prebuilts/trusty/24Q1
-else ifneq (,$(filter AP2%,$(RELEASE_PLATFORM_VERSION)))
+else ifneq (,$(filter AP2% AP3%,$(RELEASE_PLATFORM_VERSION)))
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/tangorpro/prebuilts/trusty/24Q2
 else
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/tangorpro/prebuilts/trusty/trunk
@@ -287,6 +296,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Audio package
 PRODUCT_PACKAGES += \
     audio_apmg3_aoc
+
+PRODUCT_SOONG_NAMESPACES += device/google/tangorpro/audio/tangorpro/prebuilt/libspeechenhancer
 
 # AudioProxy
 PRODUCT_PACKAGES += \
