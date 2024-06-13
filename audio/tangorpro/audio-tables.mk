@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/config/audio_platform_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_configuration.xml \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/config/sound_trigger_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_configuration.xml \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/config/audio_proxy_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_proxy_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_with_le_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml
 
 # AudioEffectHAL Configuration
@@ -62,15 +61,24 @@ PRODUCT_COPY_FILES += \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/fortemedia/mcps.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/mcps.dat \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/waves/waves_config.ini:$(TARGET_COPY_OUT_VENDOR)/etc/waves_config.ini \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/waves/waves_preset.mps:$(TARGET_COPY_OUT_VENDOR)/etc/waves_preset.mps \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_headset_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_headset_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_dock_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_dock_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_tablet_stereo_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_tablet_stereo_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_headset_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_headset_aec_off_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_handset_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_handset_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_wired_headset_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_wired_headset_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_bluetooth_headset_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_bluetooth_headset_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_dock_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_dock_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_speaker_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_speaker_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_external_speaker_aec_on_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_external_speaker_aec_on_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_handset_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_handset_aec_off_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_wired_headset_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_wired_headset_aec_off_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_bluetooth_headset_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_bluetooth_headset_aec_off_config.pb \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_dock_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_dock_aec_off_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_tablet_stereo_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_tablet_stereo_aec_off_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_headset_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_headset_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_speaker_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_speaker_aec_off_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/uplink_external_speaker_aec_off_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/uplink_external_speaker_aec_off_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_handset_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_handset_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_wired_headset_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_wired_headset_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_bluetooth_headset_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_bluetooth_headset_config.pb \
     device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_dock_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_dock_config.pb \
-    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_tablet_stereo_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_tablet_stereo_config.pb
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_speaker_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_speaker_config.pb \
+    device/google/tangorpro/audio/$(AUDIO_TABLE_FOLDER)/tuning/apmg3/downlink_external_speaker_config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aoc/downlink_external_speaker_config.pb
 
 # userdebug specific
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
